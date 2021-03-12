@@ -29,3 +29,15 @@ Route::get('/createkupon', function () {
 Route::get('/listuser', function () {
     return view('listuser');
 });
+Route::get('/sekolahmodel', function () {
+    return view('sekolahmodel');
+});
+Route::get('/sekolahemodel', function () {
+    return view('sekolahemodel');
+});
+Route::get('/sekolahjejaring', function () {
+    return view('sekolahjejaring');
+});
+Route::get('/sekolahindonesia', function () {
+    return view('sekolahindonesia');
+});

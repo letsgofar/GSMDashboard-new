@@ -179,10 +179,10 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="#">Sekolah Model</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Sekolah E-Model</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Sekolah Jejaring</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Sekolah Indonesia</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/sekolahmodel">Sekolah Model</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/sekolahemodel">Sekolah e-Model</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/sekolahjejaring">Sekolah Jejaring</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/sekolahindonesia">Sekolah Indonesia</a></li>
               </ul>
             </div>
           </li>
