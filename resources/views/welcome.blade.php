@@ -25,17 +25,17 @@
       <div class="col-md-6 grid-margin transparent">
         <div class="row">
           <div class="col-md-6 mb-4 stretch-card transparent">
-            <div class="card card-tale p-2">
+            <div class="card card-tale p-2" style="background-image:url('assets/images/dashboard/SchoolGSMBg.png')";>
               <div class="card-body">
-                <p class="mb-4">Sekolah Model GSM</p>
+                <p class="mb-4 font-weight-bold">Sekolah Model GSM</p>
                 <p class="fs-30 mb-2">4006</p>
               </div>
             </div>
           </div>
           <div class="col-md-6 mb-4 stretch-card transparent">
-            <div class="card card-dark-blue p-2">
+            <div class="card card-dark-blue p-2" style="background-image:url('assets/images/dashboard/JejaringBg.png')";>
               <div class="card-body">
-                <p class="mb-4">Sekolah Jejaring GSM</p>
+                <p class="mb-4 font-weight-bold">Sekolah Jejaring GSM</p>
                 <p class="fs-30 mb-2">61344</p>
               </div>
             </div>
@@ -43,17 +43,17 @@
         </div>
         <div class="row">
           <div class="col-md-6 mb-0 mb-lg-0 stretch-card transparent">
-            <div class="card card-light-blue p-2">
+            <div class="card card-light-blue p-2" style="background-image:url('assets/images/dashboard/MentorBg.png')";>
               <div class="card-body">
-                <p class="mb-4">Mentor</p>
+                <p class="mb-4 font-weight-bold">Mentor</p>
                 <p class="fs-30 mb-2">34040</p>
               </div>
             </div>
           </div>
           <div class="col-md-6 mb-0 stretch-card transparent">
-            <div class="card card-light-danger p-2">
+            <div class="card card-light-danger p-2" style="background-image:url('assets/images/dashboard/UserBg.png')";>
               <div class="card-body">
-                <p class="mb-4">User</p>
+                <p class="mb-4 font-weight-bold">User</p>
                 <p class="fs-30 mb-2">47033</p>
               </div>
             </div>
