@@ -194,9 +194,9 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="#">Spesial</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Level Basic</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Level Advanced</a></li>
+                <li class="nav-item"><a class="nav-link" href="/modulspesial">Spesial</a></li>
+                <li class="nav-item"><a class="nav-link" href="/modulbasic">Level Basic</a></li>
+                <li class="nav-item"><a class="nav-link" href="/moduladvanced">Level Advanced</a></li>
               </ul>
             </div>
           </li>

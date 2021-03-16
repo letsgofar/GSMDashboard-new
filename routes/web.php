@@ -41,3 +41,12 @@ Route::get('/sekolahjejaring', function () {
 Route::get('/sekolahindonesia', function () {
     return view('sekolahindonesia');
 });
+Route::get('/modulspesial', function () {
+    return view('modulspesial');
+});
+Route::get('/modulbasic', function () {
+    return view('modulbasic');
+});
+Route::get('/moduladvanced', function () {
+    return view('moduladvanced');
+});
