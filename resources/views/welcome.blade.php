@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 mb-0 mb-lg-0 stretch-card transparent">
+          <div class="col-md-6 mb-4 stretch-card transparent">
             <div class="card card-light-blue p-2" style="background-image:url('assets/images/dashboard/MentorBg.png');background-size:cover; background-position: center;";>
               <div class="card-body">
                 <p class="mb-4 font-weight-bold">Mentor</p>
@@ -50,7 +50,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-0 stretch-card transparent">
+          <div class="col-md-6 mb-4 stretch-card transparent">
             <div class="card card-light-danger p-2" style="background-image:url('assets/images/dashboard/UserBg.png');background-size:cover; background-position: center;";>
               <div class="card-body">
                 <p class="mb-4 font-weight-bold">User</p>
