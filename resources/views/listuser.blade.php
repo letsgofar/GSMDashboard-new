@@ -57,7 +57,8 @@
                         Guru
                       </td>
                       <td>
-                        
+                        <button type="button" class="btn btn-info btn-sm">Detail</button>
+                        <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
                     <tr class="table-warning">
@@ -80,7 +81,8 @@
                         Assesor
                       </td>
                       <td>
-                        
+                        <button type="button" class="btn btn-info btn-sm">Detail</button>
+                        <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
                     <tr class="table-danger">
@@ -103,7 +105,8 @@
                         Guru
                       </td>
                       <td>
-                        
+                        <button type="button" class="btn btn-info btn-sm">Detail</button>
+                        <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
                     <tr class="table-success">
@@ -126,7 +129,8 @@
                         Guru
                       </td>
                       <td>
-                        
+                        <button type="button" class="btn btn-info btn-sm">Detail</button>
+                        <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
                     <tr class="table-primary">
@@ -149,7 +153,8 @@
                         Guru
                       </td>
                       <td>
-                        
+                        <button type="button" class="btn btn-info btn-sm">Detail</button>
+                        <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
 

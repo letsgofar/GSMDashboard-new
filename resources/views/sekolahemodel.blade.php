@@ -44,7 +44,8 @@
                         Jawa Tengah
                       </td>
                       <td>
-                        
+                        <button type="button" class="btn btn-info btn-sm">Detail</button>
+                        <button type="button" class="btn btn-warning btn-sm">Label</button>
                       </td>
                     </tr>
                     <tr>
@@ -61,7 +62,8 @@
                           Jawa Timur
                         </td>
                         <td>
-                          
+                          <button type="button" class="btn btn-info btn-sm">Detail</button>
+                          <button type="button" class="btn btn-warning btn-sm">Label</button>
                         </td>
                       </tr>
                       <tr>
@@ -78,7 +80,8 @@
                           Jawa Timur
                         </td>
                         <td>
-                          
+                          <button type="button" class="btn btn-info btn-sm">Detail</button>
+                          <button type="button" class="btn btn-warning btn-sm">Label</button>
                         </td>
                       </tr>
                       <tr>
@@ -95,7 +98,8 @@
                           Jawa Tengah
                         </td>
                         <td>
-                          
+                          <button type="button" class="btn btn-info btn-sm">Detail</button>
+                          <button type="button" class="btn btn-warning btn-sm">Label</button>
                         </td>
                       </tr>
                       <tr>
@@ -112,7 +116,8 @@
                           Jawa Barat
                         </td>
                         <td>
-                          
+                          <button type="button" class="btn btn-info btn-sm">Detail</button>
+                          <button type="button" class="btn btn-warning btn-sm">Label</button>
                         </td>
                       </tr>
                   </tbody>
