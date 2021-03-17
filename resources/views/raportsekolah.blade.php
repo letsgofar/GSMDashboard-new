@@ -8,52 +8,6 @@
             <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-3">Pilih Kabupaten/Kota</div>
-                        <div class="col-md-3">Pilih Jenis Sekolah</div>
-                        <div class="col-md-3">Pilih Sekolah</div>
-                        <div class="col-md-3"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 mt-3">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect2">
-                                    <option value="">Please Select</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mt-3">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect2">
-                                    <option value="">Please Select</option>
-                                    <option>SD/MI</option>
-                                    <option>SMP/MTS</option>
-                                    <option>SMA/SMK/MA/MAK</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mt-3">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect2">
-                                    <option value="">Please Select</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mt-3">
-                            <button type="button" class="btn btn-outline-info btn-icon-text">
-                                <i class="ti-file btn-icon-prepend"></i>
-                                Tambah ke Database
-                              </button>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 grid-margin">
-              <div class="card">
-                <div class="card-body">
                   <h4 class="card-title">Profil Sekolah</h4>
                   <form class="form-sample">
                     <div class="row">
@@ -151,22 +105,25 @@
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">User di Sekolah ini</h4>
+                  <h4 class="card-title">Raport Sekolah</h4>
+                  <button type="button" class="btn btn-outline-info btn-icon-text">
+                    Create Raport Sekolah                        
+                  </button>
                   <div class="table-responsive">
                     <table class="table table-striped">
                       <thead>
                         <tr>
                           <th>
-                            Nama
+                            Judul
                           </th>
                           <th>
-                            Jabatan
+                            Dibuat Oleh
                           </th>
                           <th>
-                            Role
+                            Tanggal Diperbarui
                           </th>
                           <th>
-                            Aktivitas
+                            Tanggal Dibuat
                           </th>
                           <th>
                             Action

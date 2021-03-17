@@ -208,8 +208,8 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="#">Raport User</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Raport Sekolah</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/raportuser">Raport User</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/raportsekolah">Raport Sekolah</a></li>
               </ul>
             </div>
           </li>

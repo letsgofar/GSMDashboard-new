@@ -50,3 +50,9 @@ Route::get('/modulbasic', function () {
 Route::get('/moduladvanced', function () {
     return view('moduladvanced');
 });
+Route::get('/raportuser', function () {
+    return view('raportuser');
+});
+Route::get('/raportsekolah', function () {
+    return view('raportsekolah');
+});
