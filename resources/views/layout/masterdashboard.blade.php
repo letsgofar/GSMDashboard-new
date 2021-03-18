@@ -17,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="{{asset('/assets/js/select.dataTables.min.css')}}">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="{{asset('/assets/css/vertical-layout-light/style.css')}}">
+  <link rel="stylesheet" href="{{asset('/assets/css/vertical-layout-light/style.css?v=1.1')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{asset('/assets/images/favicon.png')}}">
 </head>
@@ -270,7 +270,7 @@
   <!-- Custom js for this page-->
   <script src="{{asset('/assets/js/dashboard.js')}}"></script>
   <script src="{{asset('/assets/js/Chart.roundedBarCharts.js')}}"></script>
-  <script> 
+	<script> 
 		$(document).ready(function() {
 			const linkLi = $( ".nav-item" );
 			const linkAnchor = $( ".nav-item a" ); // anchor is require to prevent for not to direct
@@ -283,6 +283,18 @@
 			});
 		   $( ".nav-item a[href$='"+window.location.pathname+"']" ).parent("li:first").addClass("active"); 
 		});
+	</script>
+	<script>
+			jQuery(function($) {
+			var path = window.location.href; 
+			$('ul a').each(function() { 
+				if (this.href === path) {
+					$(this).addClass('sub-menu active');
+					$( this ).parent().parent().closest("li").addClass('active2');
+					$('.active2 a:first').addClass('active'); //add the active class to the parent node
+				}
+			});
+			});
 	</script>
   <!-- End custom js for this page-->
 </body>

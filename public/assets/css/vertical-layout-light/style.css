@@ -28587,7 +28587,7 @@ div.tagsinput span.tag a {
 }
 
 .sidebar .nav .nav-item.active {
-  border-radius: 8px;
+  border-radius: 0;
 }
 
 .sidebar .nav .nav-item.active > .nav-link {
@@ -28631,7 +28631,7 @@ div.tagsinput span.tag a {
 }
 
 .sidebar .nav:not(.sub-menu) > .nav-item > .nav-link[aria-expanded="true"] {
-  border-radius: 8px 8px 0 0;
+  border-radius: 0 0 0 0;
   background: #4B49AC;
   color: #fff;
 }
@@ -28644,13 +28644,14 @@ div.tagsinput span.tag a {
   margin-bottom: 0;
   margin-top: 0;
   list-style: none;
-  padding: 0.25rem 0 0 3.07rem;
-  background: #4B49AC;
+  padding: 10px 15px 5px 15px;
+  background: #ededff;
   padding-bottom: 12px;
 }
 
 .sidebar .nav.sub-menu .nav-item {
   padding: 0;
+  margin-top: 5px;
 }
 
 .sidebar .nav.sub-menu .nav-item::before {
@@ -28660,11 +28661,12 @@ div.tagsinput span.tag a {
   position: absolute;
   margin-top: 16px;
   border-radius: 50%;
-  background: #b2b2b2;
+  background: transparent;
+  padding-left: 0.25rem;
 }
 
 .sidebar .nav.sub-menu .nav-item .nav-link {
-  color: #fff;
+  color: #6C7383;
   padding: 0.7rem 1rem;
   position: relative;
   font-size: 0.875rem;
@@ -28679,11 +28681,12 @@ div.tagsinput span.tag a {
 
 .sidebar .nav.sub-menu .nav-item .nav-link.active {
   color: #ffffff;
-  background: transparent;
+  background: #4B49AC;
 }
 
 .sidebar .nav.sub-menu .nav-item:hover {
-  background: transparent;
+  background: #8684d5;
+  border-radius: 8px;
 }
 
 .sidebar-dark .sidebar {
