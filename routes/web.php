@@ -56,3 +56,12 @@ Route::get('/raportuser', function () {
 Route::get('/raportsekolah', function () {
     return view('raportsekolah');
 });
+Route::get('/permintaanmentor', function () {
+    return view('permintaanmentor');
+});
+Route::get('/permintaansekolah', function () {
+    return view('permintaansekolah');
+});
+Route::get('/listkupon', function () {
+    return view('listkupon');
+});

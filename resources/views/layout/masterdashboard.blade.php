@@ -221,13 +221,13 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="#">Mentor</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Sekolah Model</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/permintaanmentor">Mentor</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/permintaansekolah">Sekolah Model</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/listkupon">
               <i class="ti-id-badge menu-icon"></i>
               <span class="menu-title">Kupon Perubahan</span>
             </a>
