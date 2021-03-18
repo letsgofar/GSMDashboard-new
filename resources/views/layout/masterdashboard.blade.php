@@ -143,37 +143,37 @@
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="/">
-              <i class="icon-grid menu-icon"></i>
+              <i class="ti-home menu-icon"></i>
               <span class="menu-title">Home</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/createmodul">
-              <i class="icon-layout menu-icon"></i>
+              <i class="ti-write menu-icon"></i>
               <span class="menu-title">Buat Modul</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/createraport">
-              <i class="icon-columns menu-icon"></i>
+              <i class="ti-agenda menu-icon"></i>
               <span class="menu-title">Buat Format Raport</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/createkupon">
-              <i class="icon-paper menu-icon"></i>
+              <i class="ti-credit-card menu-icon"></i>
               <span class="menu-title">Buat Kupon Perubahan</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/listuser">
-              <i class="icon-head menu-icon"></i>
+              <i class="ti-user menu-icon"></i>
               <span class="menu-title">List User</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="icon-layout menu-icon"></i>
+              <i class="ti-blackboard menu-icon"></i>
               <span class="menu-title">List Sekolah</span>
               <i class="menu-arrow"></i>
             </a>
@@ -188,7 +188,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-              <i class="icon-columns menu-icon"></i>
+              <i class="ti-book menu-icon"></i>
               <span class="menu-title">List Modul</span>
               <i class="menu-arrow"></i>
             </a>
@@ -202,7 +202,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-              <i class="icon-bar-graph menu-icon"></i>
+              <i class="ti-bookmark-alt menu-icon"></i>
               <span class="menu-title">List Raport</span>
               <i class="menu-arrow"></i>
             </a>
@@ -215,7 +215,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-              <i class="icon-grid-2 menu-icon"></i>
+              <i class="ti-pencil-alt menu-icon"></i>
               <span class="menu-title">List Permintaan</span>
               <i class="menu-arrow"></i>
             </a>
@@ -228,7 +228,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <i class="icon-paper menu-icon"></i>
+              <i class="ti-id-badge menu-icon"></i>
               <span class="menu-title">Kupon Perubahan</span>
             </a>
           </li>
@@ -270,6 +270,20 @@
   <!-- Custom js for this page-->
   <script src="{{asset('/assets/js/dashboard.js')}}"></script>
   <script src="{{asset('/assets/js/Chart.roundedBarCharts.js')}}"></script>
+  <script> 
+		$(document).ready(function() {
+			const linkLi = $( ".nav-item" );
+			const linkAnchor = $( ".nav-item a" ); // anchor is require to prevent for not to direct
+			linkAnchor.bind( "click", function(event) {
+				var clickedItem = $( this ).parent("li:first");
+				linkLi.each( function() {
+					$( this ).removeClass( "active" );
+				});
+				clickedItem.addClass( "active" );
+			});
+		   $( ".nav-item a[href$='"+window.location.pathname+"']" ).parent("li:first").addClass("active"); 
+		});
+	</script>
   <!-- End custom js for this page-->
 </body>
 
