@@ -17,51 +17,51 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/createmodul', function () {
-    return view('createmodul');
+Route::get('/modul/createmodul', function () {
+    return view('modul/createmodul');
 });
-Route::get('/createraport', function () {
-    return view('createraport');
+Route::get('/raport/createraport', function () {
+    return view('raport/createraport');
 });
-Route::get('/createkupon', function () {
-    return view('createkupon');
+Route::get('/kupon/createkupon', function () {
+    return view('kupon/createkupon');
 });
 Route::get('/listuser', function () {
     return view('listuser');
 });
-Route::get('/sekolahmodel', function () {
-    return view('sekolahmodel');
+Route::get('/sekolah/sekolahmodel', function () {
+    return view('sekolah/sekolahmodel');
 });
-Route::get('/sekolahemodel', function () {
-    return view('sekolahemodel');
+Route::get('/sekolah/sekolahemodel', function () {
+    return view('sekolah/sekolahemodel');
 });
-Route::get('/sekolahjejaring', function () {
-    return view('sekolahjejaring');
+Route::get('/sekolah/sekolahjejaring', function () {
+    return view('sekolah/sekolahjejaring');
 });
-Route::get('/sekolahindonesia', function () {
-    return view('sekolahindonesia');
+Route::get('/sekolah/sekolahindonesia', function () {
+    return view('sekolah/sekolahindonesia');
 });
-Route::get('/modulspesial', function () {
-    return view('modulspesial');
+Route::get('/modul/modulspesial', function () {
+    return view('modul/modulspesial');
 });
-Route::get('/modulbasic', function () {
-    return view('modulbasic');
+Route::get('/modul/modulbasic', function () {
+    return view('modul/modulbasic');
 });
-Route::get('/moduladvanced', function () {
-    return view('moduladvanced');
+Route::get('/modul/moduladvanced', function () {
+    return view('modul/moduladvanced');
 });
-Route::get('/raportuser', function () {
-    return view('raportuser');
+Route::get('/raport/raportuser', function () {
+    return view('raport/raportuser');
 });
-Route::get('/raportsekolah', function () {
-    return view('raportsekolah');
+Route::get('/raport/raportsekolah', function () {
+    return view('raport/raportsekolah');
 });
-Route::get('/permintaanmentor', function () {
-    return view('permintaanmentor');
+Route::get('/request/permintaanmentor', function () {
+    return view('request/permintaanmentor');
 });
-Route::get('/permintaansekolah', function () {
-    return view('permintaansekolah');
+Route::get('/request/permintaansekolah', function () {
+    return view('request/permintaansekolah');
 });
-Route::get('/listkupon', function () {
-    return view('listkupon');
+Route::get('/kupon/listkupon', function () {
+    return view('kupon/listkupon');
 });

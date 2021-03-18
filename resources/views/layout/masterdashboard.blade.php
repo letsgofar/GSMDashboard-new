@@ -148,19 +148,19 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/createmodul">
+            <a class="nav-link" href="/modul/createmodul">
               <i class="ti-write menu-icon"></i>
               <span class="menu-title">Buat Modul</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/createraport">
+            <a class="nav-link" href="/raport/createraport">
               <i class="ti-agenda menu-icon"></i>
               <span class="menu-title">Buat Format Raport</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/createkupon">
+            <a class="nav-link" href="/kupon/createkupon">
               <i class="ti-credit-card menu-icon"></i>
               <span class="menu-title">Buat Kupon Perubahan</span>
             </a>
@@ -179,10 +179,10 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/sekolahmodel">Sekolah Model</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/sekolahemodel">Sekolah e-Model</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/sekolahjejaring">Sekolah Jejaring</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/sekolahindonesia">Sekolah Indonesia</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/sekolah/sekolahmodel">Sekolah Model</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/sekolah/sekolahemodel">Sekolah e-Model</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/sekolah/sekolahjejaring">Sekolah Jejaring</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/sekolah/sekolahindonesia">Sekolah Indonesia</a></li>
               </ul>
             </div>
           </li>
@@ -194,9 +194,9 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="/modulspesial">Spesial</a></li>
-                <li class="nav-item"><a class="nav-link" href="/modulbasic">Level Basic</a></li>
-                <li class="nav-item"><a class="nav-link" href="/moduladvanced">Level Advanced</a></li>
+                <li class="nav-item"><a class="nav-link" href="/modul/modulspesial">Spesial</a></li>
+                <li class="nav-item"><a class="nav-link" href="/modul/modulbasic">Level Basic</a></li>
+                <li class="nav-item"><a class="nav-link" href="/modul/moduladvanced">Level Advanced</a></li>
               </ul>
             </div>
           </li>
@@ -208,8 +208,8 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/raportuser">Raport User</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/raportsekolah">Raport Sekolah</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/raport/raportuser">Raport User</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/raport/raportsekolah">Raport Sekolah</a></li>
               </ul>
             </div>
           </li>
@@ -221,13 +221,13 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/permintaanmentor">Mentor</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/permintaansekolah">Sekolah Model</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/request/permintaanmentor">Mentor</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/request/permintaansekolah">Sekolah Model</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/listkupon">
+            <a class="nav-link" href="/kupon/listkupon">
               <i class="ti-id-badge menu-icon"></i>
               <span class="menu-title">Kupon Perubahan</span>
             </a>
