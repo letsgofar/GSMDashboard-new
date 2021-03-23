@@ -10,7 +10,7 @@
             <div class="card-body">
               <h4 class="card-title">List Users</h4>
               <div class="table-responsive pt-3">
-                <table class="table table-bordered">
+                <table class="table table-bordered table-striped">
                   <thead>
                     <tr>
                       <th>
@@ -37,7 +37,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="table-info">
+                    <tr>
                       <td>
                         Muhammad Ghifari
                       </td>
@@ -61,7 +61,7 @@
                         <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
-                    <tr class="table-warning">
+                    <tr>
                       <td>
                         Moch. Safii
                       </td>
@@ -85,7 +85,7 @@
                         <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
-                    <tr class="table-danger">
+                    <tr>
                       <td>
                         Deddy Kurniawan S
                       </td>
@@ -109,7 +109,7 @@
                         <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
-                    <tr class="table-success">
+                    <tr>
                       <td>
                         Arga Wirawan
                       </td>
@@ -133,7 +133,7 @@
                         <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
-                    <tr class="table-primary">
+                    <tr>
                       <td>
                         Ahmadi Ahmar A
                       </td>

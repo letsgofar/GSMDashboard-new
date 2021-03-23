@@ -72,7 +72,7 @@
                     <div class="col-md-12 col-xl-3 d-flex flex-column justify-content-start">
                       <div class="ml-xl-4 mt-3">
                       <p class="card-title">Peta Sekolah GSM</p>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505885.6798151715!2d110.14298681217525!3d-7.870788438827192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x6d1b92b2cac8b3f0!2sSpecial%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1616391402357!5m2!1sen!2sid" width="950" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505885.6798151715!2d110.14298681217525!3d-7.870788438827192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x6d1b92b2cac8b3f0!2sSpecial%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1616391402357!5m2!1sen!2sid" width="970" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                       </div>  
                       </div>
                   </div>
@@ -91,9 +91,6 @@
         </div>
       </div>
     </div>
-  <!-- content-wrapper ends -->
-  <!-- partial:partials/_footer.html -->
-  <!-- partial -->
 </div>
 
 @endsection
