@@ -18,16 +18,17 @@
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="{{asset('/assets/css/vertical-layout-light/style.css?v=1.1')}}">
+  <link rel="stylesheet" href="{{asset('/assets/css/vertical-layout-light/chardinjs.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{asset('/assets/images/favicon.png')}}">
 </head>
-<body>
+<body data-chardin-sequenced="true" data-chardin-auto="false" data-chardin-delay="800">
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav id="top-nav" class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="/"><img src="{{asset('/assets/images/main-icon.png')}}" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="/"><img src="{{asset('/assets/images/small-icon.png')}}" alt="logo"/></a>
+      <div id="logoweb" class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center" data-intro="Selamat datang di website Dashboard Admin GSM, Yuk kita tur dulu!" data-position="bottom" >
+        <a class="navbar-brand brand-logo mr-5" href="/"><img  src="{{asset('/assets/images/main-icon.png')}}" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="/"><img  src="{{asset('/assets/images/small-icon.png')}}" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -46,7 +47,7 @@
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown">
+          <li id="notif" class="nav-item dropdown">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
               <i class="icon-bell mx-0"></i>
               <span class="count"></span>
@@ -94,15 +95,11 @@
               </a>
             </div>
           </li>
-          <li class="nav-item nav-profile dropdown">
+          <li id="profilUser" class="nav-item nav-profile dropdown" data-intro="Gunakan untuk logout dari Web" data-position="bottom">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="{{asset('/assets/images/faces/face26.jpg')}}" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
-                <i class="ti-settings text-primary"></i>
-                Settings
-              </a>
               <a class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>
                 Logout
@@ -116,10 +113,11 @@
       </div>
     </nav>
     <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
+    <div class="container-fluid page-body-wrapper"  style="z-index:auto;">
       <!-- partial:partials/_settings-panel.html -->
       <div class="theme-setting-wrapper">
-        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="settings-trigger"><i id="settings-trigger-i" class="ti-settings"></i></div>
+		<div data-toggle="chardinjs" id="support-trigger" class="start-support" href"#"><i id="support-trigger-i" class="ti-help"></i></div>
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
@@ -128,8 +126,6 @@
           <p class="settings-heading mt-2">HEADER SKINS</p>
           <div class="color-tiles mx-0 px-4">
             <div class="tiles success"></div>
-            <div class="tiles warning"></div>
-            <div class="tiles danger"></div>
             <div class="tiles info"></div>
             <div class="tiles dark"></div>
             <div class="tiles default"></div>
@@ -139,8 +135,8 @@
 
       <!-- partial -->
       <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar" data-intro="Menu berupa kumpulan kegiatan yang bisa Admin lakukan ~" data-position="right" >
+        <ul id="sidebarWeb" class="nav" >
           <li class="nav-item">
             <a class="nav-link" href="/">
               <i class="ti-home menu-icon"></i>
@@ -269,6 +265,8 @@
   <!-- endinject -->
   <!-- Custom js for this page-->
   <script src="{{asset('/assets/js/dashboard.js')}}"></script>
+  <script src="{{asset('/assets/js/webguide.js')}}"></script>
+  <script src="{{asset('/assets/js/chardinjs.min.js')}}"></script>
   <script src="{{asset('/assets/js/Chart.roundedBarCharts.js')}}"></script>
 	<script> 
 		$(document).ready(function() {
