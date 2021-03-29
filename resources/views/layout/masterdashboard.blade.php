@@ -295,6 +295,9 @@
 			});
 	</script>
   <!-- End custom js for this page-->
+
+  @yield('js')
+
 </body>
 
 </html>
