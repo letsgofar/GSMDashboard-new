@@ -13,55 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/modul/createmodul', function () {
-    return view('modul/createmodul');
-});
-Route::get('/raport/createraport', function () {
-    return view('raport/createraport');
-});
-Route::get('/kupon/createkupon', function () {
-    return view('kupon/createkupon');
-});
-Route::get('/listuser', function () {
-    return view('listuser');
-});
-Route::get('/sekolah/sekolahmodel', function () {
-    return view('sekolah/sekolahmodel');
-});
-Route::get('/sekolah/sekolahemodel', function () {
-    return view('sekolah/sekolahemodel');
-});
-Route::get('/sekolah/sekolahjejaring', function () {
-    return view('sekolah/sekolahjejaring');
-});
-Route::get('/sekolah/sekolahindonesia', function () {
-    return view('sekolah/sekolahindonesia');
-});
-Route::get('/modul/modulspesial', function () {
-    return view('modul/modulspesial');
-});
-Route::get('/modul/modulbasic', function () {
-    return view('modul/modulbasic');
-});
-Route::get('/modul/moduladvanced', function () {
-    return view('modul/moduladvanced');
-});
-Route::get('/raport/raportuser', function () {
-    return view('raport/raportuser');
-});
-Route::get('/raport/raportsekolah', function () {
-    return view('raport/raportsekolah');
-});
-Route::get('/request/permintaanmentor', function () {
-    return view('request/permintaanmentor');
-});
-Route::get('/request/permintaansekolah', function () {
-    return view('request/permintaansekolah');
-});
-Route::get('/kupon/listkupon', function () {
-    return view('kupon/listkupon');
-});
+Route::get('/', 'PagesController@home');
+Route::get('/modul/createmodul', 'PagesController@createmodul');
+Route::get('/modul/modulspesial', 'PagesController@modulspesial');
+Route::get('/modul/modulbasic', 'PagesController@modulbasic');
+Route::get('/modul/moduladvanced', 'PagesController@moduladvanced');
+Route::get('/raport/createraport', 'PagesController@createraport');
+Route::get('/raport/raportuser', 'PagesController@raportuser');
+Route::get('/raport/raportsekolah', 'PagesController@raportsekolah');
+Route::get('/kupon/createkupon', 'PagesController@createkupon');
+Route::get('/kupon/listkupon', 'PagesController@listkupon');
+Route::get('/sekolah/sekolahmodel', 'PagesController@sekolahmodel');
+Route::get('/sekolah/sekolahemodel', 'PagesController@sekolahemodel');
+Route::get('/sekolah/sekolahjejaring', 'PagesController@sekolahjejaring');
+Route::get('/sekolah/sekolahindonesia', 'PagesController@sekolahindonesia');
+Route::get('/request/permintaanmentor', 'PagesController@permintaanmentor');
+Route::get('/request/permintaansekolah', 'PagesController@permintaansekolah');
+Route::get('/listuser', 'PagesController@listuser');

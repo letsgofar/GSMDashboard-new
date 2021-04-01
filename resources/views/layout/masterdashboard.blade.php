@@ -27,8 +27,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav id="top-nav" class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div id="logoweb" class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center" data-intro="Selamat datang di website Dashboard Admin GSM, Yuk kita tur dulu!" data-position="bottom" >
-        <a class="navbar-brand brand-logo mr-5" href="/"><img  src="{{asset('/assets/images/main-icon.png')}}" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="/"><img  src="{{asset('/assets/images/small-icon.png')}}" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="{{url('/')}}"><img  src="{{asset('/assets/images/main-icon.png')}}" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="{{url('/')}}"><img  src="{{asset('/assets/images/small-icon.png')}}" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -138,31 +138,31 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar" data-intro="Menu berupa kumpulan kegiatan yang bisa Admin lakukan ~" data-position="right" >
         <ul id="sidebarWeb" class="nav" >
           <li class="nav-item">
-            <a class="nav-link" href="/">
+            <a class="nav-link" href="{{url('/')}}">
               <i class="ti-home menu-icon"></i>
               <span class="menu-title">Home</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/modul/createmodul">
+            <a class="nav-link" href="{{url('/modul/createmodul')}}">
               <i class="ti-write menu-icon"></i>
               <span class="menu-title">Buat Modul</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/raport/createraport">
+            <a class="nav-link" href="{{url('/raport/createraport')}}">
               <i class="ti-agenda menu-icon"></i>
               <span class="menu-title">Buat Format Raport</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/kupon/createkupon">
+            <a class="nav-link" href="{{url('/kupon/createkupon')}}">
               <i class="ti-credit-card menu-icon"></i>
               <span class="menu-title">Buat Kupon Perubahan</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/listuser">
+            <a class="nav-link" href="{{url('/listuser')}}">
               <i class="ti-user menu-icon"></i>
               <span class="menu-title">List User</span>
             </a>
@@ -175,10 +175,10 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/sekolah/sekolahmodel">Sekolah Model</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/sekolah/sekolahemodel">Sekolah e-Model</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/sekolah/sekolahjejaring">Sekolah Jejaring</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/sekolah/sekolahindonesia">Sekolah Indonesia</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/sekolah/sekolahmodel')}}">Sekolah Model</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/sekolah/sekolahemodel')}}">Sekolah e-Model</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/sekolah/sekolahjejaring')}}">Sekolah Jejaring</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/sekolah/sekolahindonesia')}}">Sekolah Indonesia</a></li>
               </ul>
             </div>
           </li>
@@ -190,9 +190,9 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="/modul/modulspesial">Spesial</a></li>
-                <li class="nav-item"><a class="nav-link" href="/modul/modulbasic">Level Basic</a></li>
-                <li class="nav-item"><a class="nav-link" href="/modul/moduladvanced">Level Advanced</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url('/modul/modulspesial')}}">Spesial</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url('/modul/modulbasic')}}">Level Basic</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url('/modul/moduladvanced')}}">Level Advanced</a></li>
               </ul>
             </div>
           </li>
@@ -204,8 +204,8 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/raport/raportuser">Raport User</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/raport/raportsekolah">Raport Sekolah</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/raport/raportuser')}}">Raport User</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/raport/raportsekolah')}}">Raport Sekolah</a></li>
               </ul>
             </div>
           </li>
@@ -217,13 +217,13 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/request/permintaanmentor">Mentor</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/request/permintaansekolah">Sekolah Model</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/request/permintaanmentor')}}">Mentor</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{url('/request/permintaansekolah')}}">Sekolah Model</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/kupon/listkupon">
+            <a class="nav-link" href="{{url('/kupon/listkupon')}}">
               <i class="ti-id-badge menu-icon"></i>
               <span class="menu-title">Kupon Perubahan</span>
             </a>
