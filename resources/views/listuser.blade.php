@@ -37,127 +37,32 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach($user as $pgn)
                     <tr>
                       <td>
-                        Muhammad Ghifari
+                        {{$pgn->nama}}
                       </td>
                       <td>
-                        Kepala Sekolah
+                        {{$pgn->jabatan}}
                       </td>
                       <td>
-                        SD Muhammadiyah
+                        {{$pgn->sekolah}}
                       </td>
                       <td>
-                        Sleman
+                        {{$pgn->kabupaten}}
                       </td>
                       <td>
-                        Sekolah Model
+                        {{$pgn->label_gsm}}
                       </td>
                       <td>
-                        Guru
+                        {{$pgn->role}}
                       </td>
                       <td>
                         <button type="button" class="btn btn-info btn-sm">Detail</button>
                         <button type="button" class="btn btn-warning btn-sm">Role</button>
                       </td>
                     </tr>
-                    <tr>
-                      <td>
-                        Moch. Safii
-                      </td>
-                      <td>
-                        Kepala Sekolah
-                      </td>
-                      <td>
-                        SMPN 1 Ngaglik
-                      </td>
-                      <td>
-                        Sleman
-                      </td>
-                      <td>
-                        Sekolah Model
-                      </td>
-                      <td>
-                        Assesor
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-info btn-sm">Detail</button>
-                        <button type="button" class="btn btn-warning btn-sm">Role</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        Deddy Kurniawan S
-                      </td>
-                      <td>
-                        Guru
-                      </td>
-                      <td>
-                        SD Ngebel Gede
-                      </td>
-                      <td>
-                        Gunung Kidul
-                      </td>
-                      <td>
-                        Sekolah Jejaring
-                      </td>
-                      <td>
-                        Guru
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-info btn-sm">Detail</button>
-                        <button type="button" class="btn btn-warning btn-sm">Role</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        Arga Wirawan
-                      </td>
-                      <td>
-                        Kepala Sekolah
-                      </td>
-                      <td>
-                        SMP 2 Muhammadiyah
-                      </td>
-                      <td>
-                        Sleman
-                      </td>
-                      <td>
-                        Sekolah Jejaring
-                      </td>
-                      <td>
-                        Guru
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-info btn-sm">Detail</button>
-                        <button type="button" class="btn btn-warning btn-sm">Role</button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        Ahmadi Ahmar A
-                      </td>
-                      <td>
-                        Guru
-                      </td>
-                      <td>
-                        SMP 3 Ngaglik
-                      </td>
-                      <td>
-                        Sleman
-                      </td>
-                      <td>
-                        Sekolah Model
-                      </td>
-                      <td>
-                        Guru
-                      </td>
-                      <td>
-                        <button type="button" class="btn btn-info btn-sm">Detail</button>
-                        <button type="button" class="btn btn-warning btn-sm">Role</button>
-                      </td>
-                    </tr>
-
+                    @endforeach
                   </tbody>
                 </table>
               </div>

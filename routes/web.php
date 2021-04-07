@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@home');
+Route::get('/listuser', 'ListUserController@index'); 
 Route::get('/modul/createmodul', 'PagesController@createmodul');
 Route::get('/modul/modulspesial', 'PagesController@modulspesial');
 Route::get('/modul/modulbasic', 'PagesController@modulbasic');
@@ -29,4 +30,4 @@ Route::get('/sekolah/sekolahjejaring', 'PagesController@sekolahjejaring');
 Route::get('/sekolah/sekolahindonesia', 'PagesController@sekolahindonesia');
 Route::get('/request/permintaanmentor', 'PagesController@permintaanmentor');
 Route::get('/request/permintaansekolah', 'PagesController@permintaansekolah');
-Route::get('/listuser', 'PagesController@listuser');
+
