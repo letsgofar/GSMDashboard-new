@@ -30,96 +30,26 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach($sekolahmodel as $model)
                     <tr>
                       <td>
-                        57890645
+                        {{$model->npsn}}
                       </td>
                       <td>
-                        SDN Karangmloko 2
+                        {{$model->nama_sekolah}}
                       </td>
                       <td>
-                        Sleman
+                        {{$model->kabupaten}}
                       </td>
                       <td>
-                        D.I. Yogyakarta
+                        {{$model->provinsi}}
                       </td>
                       <td>
                         <button type="button" class="btn btn-info btn-sm">Detail</button>
                         <button type="button" class="btn btn-warning btn-sm">Label</button>
                       </td>
                     </tr>
-                    <tr>
-                        <td>
-                          46189498
-                        </td>
-                        <td>
-                          SDN Ngebel Gede 2
-                        </td>
-                        <td>
-                          Sleman
-                        </td>
-                        <td>
-                          D.I. Yogyakarta
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          26506450
-                        </td>
-                        <td>
-                          SMPN 1 Cilacap
-                        </td>
-                        <td>
-                          Cilacap
-                        </td>
-                        <td>
-                          Jawa Tengah
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          75630981
-                        </td>
-                        <td>
-                          SDN Bantul 4
-                        </td>
-                        <td>
-                          Bantul
-                        </td>
-                        <td>
-                          D.I. Yogyakarta
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          46109843
-                        </td>
-                        <td>
-                          SDN Kacangan 2
-                        </td>
-                        <td>
-                          Kediri
-                        </td>
-                        <td>
-                          Jawa Timur
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
+                    @endforeach
                   </tbody>
                 </table>
               </div>

@@ -30,96 +30,26 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach($sekolahemodel as $model)
                     <tr>
                       <td>
-                        31891900
+                        {{$model->npsn}}
                       </td>
                       <td>
-                        SMPN 1 Balungan
+                        {{$model->nama_sekolah}}
                       </td>
                       <td>
-                        Semarang
+                        {{$model->kabupaten}}
                       </td>
                       <td>
-                        Jawa Tengah
+                        {{$model->provinsi}}
                       </td>
                       <td>
                         <button type="button" class="btn btn-info btn-sm">Detail</button>
                         <button type="button" class="btn btn-warning btn-sm">Label</button>
                       </td>
                     </tr>
-                    <tr>
-                        <td>
-                          76190122
-                        </td>
-                        <td>
-                          SDN Karunganom
-                        </td>
-                        <td>
-                          Surabaya
-                        </td>
-                        <td>
-                          Jawa Timur
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          87614234
-                        </td>
-                        <td>
-                          SMPN 10 Malang
-                        </td>
-                        <td>
-                          Malang
-                        </td>
-                        <td>
-                          Jawa Timur
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          27629087
-                        </td>
-                        <td>
-                          SDN Bareng 10
-                        </td>
-                        <td>
-                          Sragen
-                        </td>
-                        <td>
-                          Jawa Tengah
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          17893512
-                        </td>
-                        <td>
-                          SMAN 10
-                        </td>
-                        <td>
-                          Bandung
-                        </td>
-                        <td>
-                          Jawa Barat
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
+                    @endforeach
                   </tbody>
                 </table>
               </div>

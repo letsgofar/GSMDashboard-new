@@ -30,96 +30,26 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach($sekolahjejaring as $network)
                     <tr>
                       <td>
-                        27812342
+                        {{$network->npsn}}
                       </td>
                       <td>
-                        SMPN 1 Sleman
+                        {{$network->nama_sekolah}}
                       </td>
                       <td>
-                        Sleman
+                        {{$network->kabupaten}}
                       </td>
                       <td>
-                        Yogyakarta
+                        {{$network->provinsi}}
                       </td>
                       <td>
                         <button type="button" class="btn btn-info btn-sm">Detail</button>
                         <button type="button" class="btn btn-warning btn-sm">Label</button>
                       </td>
                     </tr>
-                    <tr>
-                        <td>
-                          17291754
-                        </td>
-                        <td>
-                          SDN 2 Kulon Progo
-                        </td>
-                        <td>
-                          Kulon Progo
-                        </td>
-                        <td>
-                          Yogyakarta
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          16217890
-                        </td>
-                        <td>
-                          SMPN 1 Gunung Kidul
-                        </td>
-                        <td>
-                          Gunung Kidul
-                        </td>
-                        <td>
-                          Yogyakarta
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          17261999
-                        </td>
-                        <td>
-                          SDN Muhammadiyah 11
-                        </td>
-                        <td>
-                          Sleman
-                        </td>
-                        <td>
-                          Yogyakarta
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          16234509
-                        </td>
-                        <td>
-                          SMAN 1 Yogyakarta
-                        </td>
-                        <td>
-                          Sleman
-                        </td>
-                        <td>
-                          Yogyakarta
-                        </td>
-                        <td>
-                          <button type="button" class="btn btn-info btn-sm">Detail</button>
-                          <button type="button" class="btn btn-warning btn-sm">Label</button>
-                        </td>
-                      </tr>
+                    @endforeach
                   </tbody>
                 </table>
               </div>
