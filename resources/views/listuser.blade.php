@@ -13,25 +13,16 @@
                 <table class="table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>
+                      <th class="text-center">
                         Nama
                       </th>
-                      <th>
-                        Jabatan
-                      </th>
-                      <th>
+                      <th class="text-center">
                         Sekolah
                       </th>
-                      <th>
-                        Kabupaten
+                      <th class="text-center">
+                        Jabatan
                       </th>
-                      <th>
-                        Label GSM
-                      </th>
-                      <th>
-                        Role
-                      </th>
-                      <th>
+                      <th class="text-center">
                         Actions
                       </th>
                     </tr>
@@ -43,23 +34,16 @@
                         {{$pgn->nama}}
                       </td>
                       <td>
-                        {{$pgn->jabatan}}
-                      </td>
-                      <td>
                         {{$pgn->sekolah}}
                       </td>
                       <td>
-                        {{$pgn->kabupaten}}
+                        {{$pgn->jabatan}}
                       </td>
                       <td>
-                        {{$pgn->label_gsm}}
-                      </td>
-                      <td>
-                        {{$pgn->role}}
-                      </td>
-                      <td>
+                        <div class="text-center">
                         <button type="button" class="btn btn-info btn-sm">Detail</button>
                         <button type="button" class="btn btn-warning btn-sm">Role</button>
+                        </div>
                       </td>
                     </tr>
                     @endforeach

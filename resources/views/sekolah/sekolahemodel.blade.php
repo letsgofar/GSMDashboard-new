@@ -12,19 +12,19 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th>
+                      <th class="text-center">
                         NPSN
                       </th>
-                      <th>
+                      <th class="text-center">
                         Nama Sekolah
                       </th>
-                      <th>
+                      <th class="text-center">
                         Kabupaten
                       </th>
-                      <th>
+                      <th class="text-center">
                         Provinsi
                       </th>
-                      <th>
+                      <th class="text-center">
                         Action
                       </th>
                     </tr>
@@ -32,21 +32,23 @@
                   <tbody>
                     @foreach($sekolahemodel as $model)
                     <tr>
-                      <td>
+                      <td class="text-center">
                         {{$model->npsn}}
                       </td>
-                      <td>
+                      <td class="text-center">
                         {{$model->nama_sekolah}}
                       </td>
-                      <td>
+                      <td class="text-center">
                         {{$model->kabupaten}}
                       </td>
-                      <td>
+                      <td class="text-center">
                         {{$model->provinsi}}
                       </td>
                       <td>
+                        <div class="text-center">
                         <button type="button" class="btn btn-info btn-sm">Detail</button>
                         <button type="button" class="btn btn-warning btn-sm">Label</button>
+                        </div>
                       </td>
                     </tr>
                     @endforeach
