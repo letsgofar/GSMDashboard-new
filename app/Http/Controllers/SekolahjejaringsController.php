@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Sekolahjejaring;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class SekolahModelController extends Controller
+class SekolahjejaringsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class SekolahModelController extends Controller
      */
     public function index()
     {
-        $sekolahmodel = \App\SekolahModel::all();
-        return view('sekolah/sekolahmodel', ['sekolahmodel'=>$sekolahmodel]);
+        $sekolahjejaring = Sekolahjejaring::all();
+        return view("sekolah/sekolahjejaring", ['sekolahjejaring'=>$sekolahjejaring]);
     }
 
     /**
@@ -42,21 +42,21 @@ class SekolahModelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Sekolahjejaring  $sekolahjejaring
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Sekolahjejaring $sekolahjejaring)
     {
-        //
+        return view('sekolah/sekolahjejaringdetail', ['jejaring'=>$sekolahjejaring]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Sekolahjejaring  $sekolahjejaring
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Sekolahjejaring $sekolahjejaring)
     {
         //
     }
@@ -65,10 +65,10 @@ class SekolahModelController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Sekolahjejaring  $sekolahjejaring
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Sekolahjejaring $sekolahjejaring)
     {
         //
     }
@@ -76,10 +76,10 @@ class SekolahModelController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Sekolahjejaring  $sekolahjejaring
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Sekolahjejaring $sekolahjejaring)
     {
         //
     }

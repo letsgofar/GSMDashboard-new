@@ -46,8 +46,8 @@
                       </td>
                       <td>
                         <div class="text-center">
-                        <button type="button" class="btn btn-info btn-sm">Detail</button>
-                        <button type="button" class="btn btn-warning btn-sm">Label</button>
+                        <a href="/sekolah/sekolahemodel/{{$model->id}}" type="button" class="btn btn-info btn-sm">Detail</a>
+                        <a type="button" class="btn btn-warning btn-sm">Label</a>
                         </div>
                       </td>
                     </tr>

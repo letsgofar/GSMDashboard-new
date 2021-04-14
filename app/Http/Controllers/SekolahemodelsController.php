@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Sekolahemodel;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class SekolahEModelController extends Controller
+class SekolahemodelsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class SekolahEModelController extends Controller
      */
     public function index()
     {
-        $sekolahemodel = \App\SekolahEModel::all();
-        return view('sekolah/sekolahemodel',['sekolahemodel' => $sekolahemodel]);
+        $sekolahemodel = Sekolahemodel::all();
+        return view("sekolah/sekolahemodel", ['sekolahemodel'=>$sekolahemodel]);
     }
 
     /**
@@ -42,21 +42,21 @@ class SekolahEModelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Sekolahemodel  $sekolahemodel
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Sekolahemodel $sekolahemodel)
     {
-        //
+        return view('sekolah/sekolahemodeldetail', ['emodel'=>$sekolahemodel]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Sekolahemodel  $sekolahemodel
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Sekolahemodel $sekolahemodel)
     {
         //
     }
@@ -65,10 +65,10 @@ class SekolahEModelController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Sekolahemodel  $sekolahemodel
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Sekolahemodel $sekolahemodel)
     {
         //
     }
@@ -76,10 +76,10 @@ class SekolahEModelController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Sekolahemodel  $sekolahemodel
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Sekolahemodel $sekolahemodel)
     {
         //
     }

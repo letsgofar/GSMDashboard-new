@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Sekolahmodel;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class SekolahJejaringController extends Controller
+class SekolahmodelsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,9 @@ class SekolahJejaringController extends Controller
      */
     public function index()
     {
-        $sekolahjejaring = \App\SekolahJejaring::all();
-        return view('sekolah/sekolahjejaring', ['sekolahjejaring'=>$sekolahjejaring]);
+        $sekolahmodel = Sekolahmodel::all();
+        return view("sekolah/sekolahmodel", ['sekolahmodel'=> $sekolahmodel]);
+        
     }
 
     /**
@@ -42,21 +43,21 @@ class SekolahJejaringController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Sekolahmodel  $sekolahmodel
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Sekolahmodel $sekolahmodel)
     {
-        //
+        return view("sekolah/sekolahmodeldetail", ['model'=>$sekolahmodel]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Sekolahmodel  $sekolahmodel
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Sekolahmodel $sekolahmodel)
     {
         //
     }
@@ -65,10 +66,10 @@ class SekolahJejaringController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Sekolahmodel  $sekolahmodel
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Sekolahmodel $sekolahmodel)
     {
         //
     }
@@ -76,10 +77,10 @@ class SekolahJejaringController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Sekolahmodel  $sekolahmodel
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Sekolahmodel $sekolahmodel)
     {
         //
     }
