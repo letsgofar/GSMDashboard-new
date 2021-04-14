@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@home');
-Route::get('/listuser', 'ListUserController@index'); 
+Route::get('/listuser', 'DaftarpenggunasController@index'); 
+Route::get('/listuser/{daftarpengguna}', 'DaftarpenggunasController@show'); 
+
 Route::get('/modul/createmodul', 'PagesController@createmodul');
 Route::get('/modul/modulspesial', 'PagesController@modulspesial');
 Route::get('/modul/modulbasic', 'PagesController@modulbasic');

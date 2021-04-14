@@ -28,21 +28,21 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach($user as $pgn)
+                    @foreach($pengguna as $pengguna)
                     <tr>
                       <td>
-                        {{$pgn->nama}}
+                        {{$pengguna->nama}}
                       </td>
                       <td>
-                        {{$pgn->sekolah}}
+                        {{$pengguna->sekolah}}
                       </td>
                       <td>
-                        {{$pgn->jabatan}}
+                        {{$pengguna->jabatan}}
                       </td>
                       <td>
                         <div class="text-center">
-                        <button type="button" class="btn btn-info btn-sm">Detail</button>
-                        <button type="button" class="btn btn-warning btn-sm">Role</button>
+                        <a href="/listuser/{{$pengguna->id}}" class="btn btn-info btn-sm">Detail</a>
+                        <a href="/" type="button" class="btn btn-warning btn-sm">Role</a>
                         </div>
                       </td>
                     </tr>
