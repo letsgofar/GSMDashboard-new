@@ -46,7 +46,7 @@
                       </td>
                       <td>
                         <div class="text-center">
-                        <a href="/sekolah/sekolahemodel/{{$model->id}}" type="button" class="btn btn-info btn-sm">Detail</a>
+                        <a href="{{url("/sekolah/sekolahemodel/$model->id")}}" type="button" class="btn btn-info btn-sm">Detail</a>
                         <a type="button" class="btn btn-warning btn-sm">Label</a>
                         </div>
                       </td>
