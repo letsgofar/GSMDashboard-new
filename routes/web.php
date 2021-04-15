@@ -33,9 +33,9 @@ Route::get('/sekolah/sekolahindonesia', 'Pagescontroller@sekolahindonesia');
 
 //route untuk modul
 Route::get('/modul/createmodul', 'PagesController@createmodul');
-Route::get('/modul/modulspesial', 'PagesController@modulspesial');
-Route::get('/modul/modulbasic', 'PagesController@modulbasic');
-Route::get('/modul/moduladvanced', 'PagesController@moduladvanced');
+Route::get('/modul/modulspesial', 'ModulspesialsController@index');
+Route::get('/modul/modulbasic', 'ModulbasicsController@index');
+Route::get('/modul/moduladvanced', 'ModuladvancedsController@index');
 
 //route untuk raport
 Route::get('/raport/createraport', 'PagesController@createraport');

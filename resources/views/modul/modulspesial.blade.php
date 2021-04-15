@@ -11,6 +11,7 @@
               <div class="table-responsive">
                 <table class="table table-striped">
                   <thead>
+                    @foreach ($spesial as $spesial)
                     <tr>
                       <th class="text-center">
                         Judul
@@ -29,21 +30,22 @@
                   <tbody>
                     <tr>
                       <td>
-                        Lingkungan Sekolah yang positif dan etis
+                        {{$spesial->judul_modul}}
                       </td>
                       <td>
-                        Ekosistem-Positif
+                        {{$spesial->kategori}}
                       </td>
                       <td class="text-wrap">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nihil autem quis doloremque a tenetur nam at saepe commodi. Ut ipsam quos atque dolor non illum repellat vitae culpa aliquid.
+                        {{$spesial->deskripsi_modul}}
                       </td>
                       <td>
                         <div class="text-center">
-                        <button type="button" class="btn btn-warning btn-sm">Edit</button>
-                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        <a type="button" class="btn btn-warning btn-sm">Edit</a>
+                        <a type="button" class="btn btn-danger btn-sm">Delete</a>
                         </div>
                       </td>
                     </tr>
+                    @endforeach
                   </tbody>
                 </table>
               </div>
