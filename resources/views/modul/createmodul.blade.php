@@ -2,9 +2,14 @@
 
 @section('container')
 
-<div class="main-panel">        
+<div class="main-panel">      
     <div class="content-wrapper">
       <div class="row">
+          @if (session('status'))
+          <div class="ml-3 alert alert-success">
+              {{ session('status') }}
+          </div>
+          @endif    
         <div class="col-12 grid-margin stretch-card">
           <div class="card">
             <div class="card-body">
@@ -12,52 +17,53 @@
               <p class="card-description">
                 Admin bisa membuat mengupload materi dengan mengisi form berikut
               </p>
-              <form class="forms-sample">
+              <form class="forms-sample" method="POST" action="/modul/createmodul">
+                @csrf
                 <div class="form-group">
                   <label for="">Pilih Kategori</label>
-                  <select class="form-control" id="kategori">
-                    <option value="ekosistem-positif">Penciptaan Ekosistem Positif di Sekolah</option>
-                    <option value="pembelajaran-riset">Pembelajaran Berbasis Riset</option>
-                    <option value="pengembangan-karakter">Pengembangan Karakter</option>
-                    <option value="trisentra-pendidikan">Tri Sentra Pendidikan</option>
+                  <select class="form-control" id="kategori" name="kategori">
+                    <option value="Penciptaan Ekosistem Positif di Sekolah">Penciptaan Ekosistem Positif di Sekolah</option>
+                    <option value="Pembelajaran Berbasis Riset">Pembelajaran Berbasis Riset</option>
+                    <option value="Pengembangan Karakter">Pengembangan Karakter</option>
+                    <option value="Tri Sentra Pendidikan">Tri Sentra Pendidikan</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="">Pilih Level</label>
-                  <select class="form-control" id="level">
-                    <option value="spesial">Special</option>
-                    <option value="basic">Basic</option>
-                    <option value="advanced">Advanced</option>
+                  <select class="form-control" id="level" name="level">
+                    <option value="Special">Special</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Advanced">Advanced</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="">Tingkat Sekolah</label>
-                  <select class="form-control" id="tingkat-sekolah">
-                    <option value="sd">SD/MI</option>
-                    <option value="smp">SMP/MTS</option>
-                    <option value="sma">SMA/SMK/MA/MAK</option>
+                  <select class="form-control" id="tingkat-sekolah" name="tingkat_sekolah">
+                    <option value="SD">SD/MI</option>
+                    <option value="SMP">SMP/MTS</option>
+                    <option value="SMA">SMA/SMK/MA/MAK</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="">Judul Modul</label>
-                  <input type="text" class="form-control" id="title" placeholder="Masukkan Judul Modul" required>
+                  <input type="text" class="form-control" id="title" placeholder="Masukkan Judul Modul" name="judul_modul" required>
                 </div>
                 <div class="form-group">
                   <label for="exampleTextarea1">Deskripsi Modul</label>
-                  <textarea class="form-control" id="description" rows="4"></textarea>
+                  <textarea class="form-control" id="description" rows="4" name="deskripsi"></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleTextarea1">Tantangan</label>
-                  <textarea class="form-control" id="task" rows="4"></textarea>
+                  <textarea class="form-control" id="task" rows="4" name="tantangan"></textarea>
                 </div>
                 <div class="form-group">
                   <label>Upload URL Video</label>
-                  <input type="text" name="" class="file-upload-default">
+                  <input type="text" class="file-upload-default" name="url_video">
                   <div id="field_url_video" >
 
                   </div>
                   <div class="input-group col-xs-12">
-                    <input type="text" name="video[]" id="video_0" class="form-control file-upload-info" placeholder="Masukkan URL Video">
+                    <input type="text" name="url_video" id="video_0" class="form-control file-upload-info" placeholder="Masukkan URL Video">
                     <span class="input-group-append">
                       <button class="file-upload-browse btn btn-primary" type="button" id="add_video">Upload</button>
                     </span>
@@ -65,12 +71,12 @@
                 </div>
                 <div class="form-group">
                   <label>Upload URL Dokumen</label>
-                  <input type="text" name="dokumen" class="file-upload-default">
+                  <input type="text" name="url_dokumen" class="file-upload-default">
                   <div id="field_url_document">
 
                   </div>
                   <div class="input-group col-xs-12">
-                    <input type="text" name="document[]" id="document_0" class="form-control file-upload-info" placeholder="Masukkan URL Dokumen">
+                    <input type="text" name="url_dokumen" id="document_0" class="form-control file-upload-info" placeholder="Masukkan URL Dokumen">
                     <span class="input-group-append">
                       <button class="file-upload-browse btn btn-primary" type="button" id="add_document">Upload</button>
                     </span>
@@ -81,13 +87,19 @@
                   <div id="field_url_image" >
 
                   </div>
-                  <input type="file" name="image[]" id="image_0" class="file-upload-default">
+                  <div class="input-group col-xs-12">
+                    <input type="text" name="url_gambar" id="document_0" class="form-control file-upload-info" placeholder="Masukkan URL Dokumen">
+                    <span class="input-group-append">
+                      <button class="file-upload-browse btn btn-primary" type="button" id="add_document">Upload</button>
+                    </span>
+                  </div>
+                  {{-- <input type="file" name="url_gambar" id="image_0" class="file-upload-default">
                   <div class="input-group col-xs-12">
                     <input type="text" class="form-control file-upload-info" disabled placeholder="">
                     <span class="input-group-append">
                       <button class="file-upload-browse btn btn-primary" type="button" id="add_image">Choose File</button>
                     </span>
-                  </div>
+                  </div> --}}
                 </div>
                 <button type="submit" class="btn btn-primary mr-2" id="upload_modul" onclick="upload_modul()">Submit Modul</button>
                 <button class="btn btn-light">Cancel</button>

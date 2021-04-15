@@ -32,10 +32,13 @@ Route::get('/sekolah/sekolahjejaring/{sekolahjejaring}', 'SekolahjejaringsContro
 Route::get('/sekolah/sekolahindonesia', 'Pagescontroller@sekolahindonesia');
 
 //route untuk modul
-Route::get('/modul/createmodul', 'PagesController@createmodul');
+Route::post('/modul/createmodul', 'BuatmodulsController@store');
+Route::get('/modul/createmodul', 'BuatmodulsController@index');
+
 Route::get('/modul/modulspesial', 'ModulspesialsController@index');
 Route::get('/modul/modulbasic', 'ModulbasicsController@index');
 Route::get('/modul/moduladvanced', 'ModuladvancedsController@index');
+
 
 //route untuk raport
 Route::get('/raport/createraport', 'PagesController@createraport');
