@@ -14,7 +14,8 @@ class ModulbasicsController extends Controller
      */
     public function index()
     {
-        $modulbasic = Modulbasic::all();
+
+        $modulbasic = Modulbasic::having('level', "Basic")->get();
         return view('modul/modulbasic', ['basics'=>$modulbasic]);
     }
 

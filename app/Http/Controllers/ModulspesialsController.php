@@ -14,7 +14,7 @@ class ModulspesialsController extends Controller
      */
     public function index()
     {
-        $modulspesial = Modulspesial::all();
+        $modulspesial= Modulspesial::having('level', "Special")->get();
         return view('modul/modulspesial', ['spesial'=>$modulspesial]);
     }
 

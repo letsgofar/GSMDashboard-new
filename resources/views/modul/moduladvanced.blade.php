@@ -11,7 +11,6 @@
               <div class="table-responsive">
                 <table class="table table-striped">
                   <thead>
-                    @foreach ($advanceds as $advanced)
                     <tr>
                       <th class="text-center">
                         Judul
@@ -28,11 +27,12 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach ($advanceds as $advanced)
                     <tr>
-                      <td>
+                      <td class="text-wrap">
                         {{$advanced->judul_modul}}
                       </td>
-                      <td>
+                      <td class="text-wrap">
                         {{$advanced->kategori}}
                       </td>
                       <td class="text-wrap">

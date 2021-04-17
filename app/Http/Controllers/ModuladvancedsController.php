@@ -14,7 +14,7 @@ class ModuladvancedsController extends Controller
      */
     public function index()
     {
-        $moduladvanced = Moduladvanced::all();
+        $moduladvanced= Moduladvanced::having('level', "Advanced")->get();
         return view('modul/moduladvanced', ['advanceds'=>$moduladvanced]);
     }
 
