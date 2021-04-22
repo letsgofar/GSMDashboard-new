@@ -29,10 +29,10 @@
                   <tbody>
                     @foreach ($spesial as $spesial)
                     <tr>
-                      <td class="text-wrap">
+                      <td>
                         {{$spesial->judul_modul}}
                       </td>
-                      <td class="text-wrap">
+                      <td>
                         {{$spesial->kategori}}
                       </td>
                       <td class="text-wrap">
