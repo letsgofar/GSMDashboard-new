@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Sekolahemodel;
 use Illuminate\Http\Request;
 
-class SekolahemodelsController extends Controller
+class SekolahemodelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class SekolahemodelsController extends Controller
      */
     public function index()
     {
-        $sekolahemodel = Sekolahemodel::all();
-        return view("sekolah/sekolahemodel", ['sekolahemodel'=>$sekolahemodel]);
+        $sekolahemodel= Sekolahemodel::having('label_gsm', "Sekolah E-Model")->get();
+        return view('sekolah/sekolahemodel', ['emodel'=>$sekolahemodel]);
     }
 
     /**
@@ -47,7 +47,7 @@ class SekolahemodelsController extends Controller
      */
     public function show(Sekolahemodel $sekolahemodel)
     {
-        return view('sekolah/sekolahemodeldetail', ['emodel'=>$sekolahemodel]);
+        return view('sekolah/sekolahemodeldetail', ['emodel' => $sekolahemodel]);
     }
 
     /**

@@ -20,14 +20,14 @@ Route::get('/listuser', 'DaftarpenggunasController@index');
 Route::get('/listuser/{daftarpengguna}', 'DaftarpenggunasController@show'); //{daftarpengguna} diambil dari model
 
 //route untuk sekolah
-Route::get('/sekolah/sekolahmodel', 'SekolahmodelsController@index');
-Route::get('/sekolah/sekolahmodel/{sekolahmodel}', 'SekolahmodelsController@show');
+Route::get('/sekolah/sekolahmodel', 'SekolahmodelController@index');
+Route::get('/sekolah/sekolahmodel/{sekolahmodel}', 'SekolahmodelController@show');
 
-Route::get('/sekolah/sekolahemodel', 'SekolaheModelsController@index');
-Route::get('/sekolah/sekolahemodel/{sekolahemodel}', 'SekolahemodelsController@show');
+Route::get('/sekolah/sekolahemodel', 'SekolahemodelController@index');
+Route::get('/sekolah/sekolahemodel/{sekolahemodel}', 'SekolahemodelController@show');
 
-Route::get('/sekolah/sekolahjejaring', 'SekolahjejaringsController@index');
-Route::get('/sekolah/sekolahjejaring/{sekolahjejaring}', 'SekolahjejaringsController@show');
+Route::get('/sekolah/sekolahjejaring', 'SekolahjejaringController@index');
+Route::get('/sekolah/sekolahjejaring/{sekolahjejaring}', 'SekolahjejaringController@show');
 
 Route::get('/sekolah/sekolahindonesia', 'Pagescontroller@sekolahindonesia');
 

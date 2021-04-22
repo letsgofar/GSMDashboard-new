@@ -30,23 +30,23 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach($sekolahjejaring as $network)
+                    @foreach($jejaring as $sekolahjejaring)
                     <tr>
                       <td class="text-center">
-                        {{$network->npsn}}
+                        {{$sekolahjejaring->npsn}}
                       </td>
                       <td class="text-center">
-                        {{$network->nama_sekolah}}
+                        {{$sekolahjejaring->nama_sekolah}}
                       </td>
                       <td class="text-center">
-                        {{$network->kabupaten}}
+                        {{$sekolahjejaring->kabupaten}}
                       </td>
                       <td class="text-center">
-                        {{$network->provinsi}}
+                        {{$sekolahjejaring->provinsi}}
                       </td>
                       <td>
                         <div class="text-center">
-                        <a href="{{url("/sekolah/sekolahjejaring/$network->id")}}" type="button" class="btn btn-info btn-sm">Detail</a>
+                        <a href="{{url("/sekolah/sekolahjejaring/$sekolahjejaring->id")}}" type="button" class="btn btn-info btn-sm">Detail</a>
                         <a type="button" class="btn btn-warning btn-sm">Label</a>
                         </div>
                       </td>
