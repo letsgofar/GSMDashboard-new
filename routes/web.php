@@ -46,8 +46,11 @@ Route::get('/raport/raportuser', 'PagesController@raportuser');
 Route::get('/raport/raportsekolah', 'PagesController@raportsekolah');
 
 //route untuk kupon
-Route::get('/kupon/createkupon', 'PagesController@createkupon');
-Route::get('/kupon/listkupon', 'PagesController@listkupon');
+
+Route::post('/kupon/createkupon', 'BuatkuponController@store');
+Route::get('/kupon/createkupon', 'BuatkuponController@index');
+
+Route::get('/kupon/listkupon', 'ListkuponController@index');
 
 
 

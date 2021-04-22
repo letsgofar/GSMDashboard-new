@@ -27,48 +27,32 @@
                     <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th>
+                          <th class="text-center">
                             Kode Kupon
                           </th>
-                          <th>
+                          <th class="text-center">
                             Nama Kupon
                           </th>
-                          <th>
-                            Kuota Kupon
-                          </th>
-                          <th>
-                            Kuota Digunakan
-                          </th>
-                          <th>
-                            Expired
-                          </th>
-                          <th>
+                          <th class="text-center">
                             Action
                           </th>
                         </tr>
                       </thead>
                       <tbody>
+                        @foreach ($kupon as $kupon)
                         <tr>
-                          <td>
-                            ...
+                          <td class="text-center">
+                            {{$kupon->kode_kupon}}
                           </td>
-                          <td>
-                            ...
+                          <td class="text-center">
+                            {{$kupon->nama_kupon}}
                           </td>
-                          <td>
-                            ...
-                          </td>
-                          <td>
-                            ...
-                          </td>
-                          <td>
-                            ...
-                          </td>
-                          <td>
-                            <button type="button" class="btn btn-info btn-sm"></button>
-                            <button type="button" class="btn btn-warning btn-sm"></button>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-warning btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
                           </td>
                         </tr>
+                        @endforeach
                       </tbody>
                     </table>
                   </div>
