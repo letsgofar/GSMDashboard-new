@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['middleware'=>'auth'], function(){
+
 Route::get('/', 'PagesController@home');
 
 //route untuk user
@@ -64,3 +66,8 @@ Route::delete('kupon/listkupon/{listkupon}', 'ListkuponController@destroy');
 Route::get('/request/permintaanmentor', 'PagesController@permintaanmentor');
 Route::get('/request/permintaansekolah', 'PagesController@permintaansekolah');
 
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
