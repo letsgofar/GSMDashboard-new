@@ -41,7 +41,11 @@
                       <td>
                         <div class="text-center">
                         <a type="button" class="btn btn-warning btn-sm">Edit</a>
-                        <a type="button" class="btn btn-danger btn-sm">Delete</a>
+                        <form class="d-inline" action="/modul/modulspesial/{{$spesial->id}}" method="POST">
+                          @method('delete')
+                          @csrf
+                          <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                          </form>
                         </div>
                       </td>
                     </tr>

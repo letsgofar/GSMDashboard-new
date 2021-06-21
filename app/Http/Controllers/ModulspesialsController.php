@@ -81,6 +81,7 @@ class ModulspesialsController extends Controller
      */
     public function destroy(Modulspesial $modulspesial)
     {
-        //
+        Modulspesial::destroy($modulspesial->id);
+        return redirect('/modul/modulspesial');
     }
 }

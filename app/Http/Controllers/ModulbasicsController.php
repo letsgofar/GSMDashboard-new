@@ -82,6 +82,7 @@ class ModulbasicsController extends Controller
      */
     public function destroy(Modulbasic $modulbasic)
     {
-        //
+        Modulbasic::destroy($modulbasic->id);
+        return redirect('/modul/modulbasic');
     }
 }

@@ -81,6 +81,7 @@ class ModuladvancedsController extends Controller
      */
     public function destroy(Moduladvanced $moduladvanced)
     {
-        //
+        Moduladvanced::destroy($moduladvanced->id);
+        return redirect('/modul/moduladvanced');
     }
 }

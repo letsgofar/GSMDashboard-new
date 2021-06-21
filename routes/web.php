@@ -39,6 +39,10 @@ Route::get('/modul/modulspesial', 'ModulspesialsController@index');
 Route::get('/modul/modulbasic', 'ModulbasicsController@index');
 Route::get('/modul/moduladvanced', 'ModuladvancedsController@index');
 
+Route::delete('modul/modulbasic/{modulbasic}', 'ModulbasicsController@destroy');
+Route::delete('modul/modulspesial/{modulspesial}', 'ModulspesialsController@destroy');
+Route::delete('modul/moduladvanced/{moduladvanced}', 'ModuladvancedsController@destroy');
+
 
 //route untuk raport
 Route::get('/raport/createraport', 'PagesController@createraport');
