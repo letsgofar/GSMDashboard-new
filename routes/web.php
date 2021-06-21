@@ -56,6 +56,8 @@ Route::get('/kupon/createkupon', 'BuatkuponController@index');
 
 Route::get('/kupon/listkupon', 'ListkuponController@index');
 
+Route::delete('kupon/listkupon/{listkupon}', 'ListkuponController@destroy');
+
 
 
 //route untuk request

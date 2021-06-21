@@ -81,6 +81,7 @@ class ListkuponController extends Controller
      */
     public function destroy(Listkupon $listkupon)
     {
-        //
+        Listkupon::destroy($listkupon->id);
+        return redirect('/kupon/listkupon');
     }
 }

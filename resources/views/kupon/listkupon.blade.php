@@ -49,7 +49,11 @@
                           </td>
                           <td class="text-center">
                             <button type="button" class="btn btn-warning btn-sm">Edit</button>
-                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                            <form class="d-inline" action="/kupon/listkupon/{{$kupon->id}}" method="POST">
+                              @method('delete')
+                              @csrf
+                              <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                              </form>
                           </td>
                         </tr>
                         @endforeach
