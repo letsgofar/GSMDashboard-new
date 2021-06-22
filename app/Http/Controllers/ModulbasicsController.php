@@ -59,7 +59,7 @@ class ModulbasicsController extends Controller
      */
     public function edit(Modulbasic $modulbasic)
     {
-        //
+        return view('modul/editmodulbasic', ['modulbasic'=>$modulbasic]);
     }
 
     /**
@@ -71,7 +71,20 @@ class ModulbasicsController extends Controller
      */
     public function update(Request $request, Modulbasic $modulbasic)
     {
-        //
+        Modulbasic::where('id', $modulbasic->id)
+        ->update([
+            'kategori'=> $request->kategori,
+            'level'=> $request->level,
+            'tingkat_sekolah'=> $request->tingkat_sekolah,
+            'judul_modul'=> $request->judul_modul,
+            'deskripsi_modul'=> $request->deskripsi_modul,
+            'tantangan'=> $request->tantangan,
+            'url_video'=> $request->url_video,
+            'url_dokumen'=> $request->url_dokumen,
+            'url_gambar'=> $request->url_gambar,
+        ]);
+
+        return redirect('/modul/modulbasic');
     }
 
     /**

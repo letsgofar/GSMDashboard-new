@@ -45,6 +45,18 @@ Route::delete('modul/modulbasic/{modulbasic}', 'ModulbasicsController@destroy');
 Route::delete('modul/modulspesial/{modulspesial}', 'ModulspesialsController@destroy');
 Route::delete('modul/moduladvanced/{moduladvanced}', 'ModuladvancedsController@destroy');
 
+//edit modul basic
+Route::get('modul/modulbasic/{modulbasic}', 'ModulbasicsController@edit');
+Route::put('/modul/modulbasic/{modulbasic}', 'ModulbasicsController@update');
+
+//edit modul spesial
+Route::get('modul/modulspesial/{modulspesial}', 'ModulspesialsController@edit');
+Route::put('/modul/modulspesial/{modulspesial}', 'ModulspesialsController@update');
+
+//edit modul advanced
+Route::get('modul/moduladvanced/{moduladvanced}', 'ModuladvancedsController@edit');
+Route::put('/modul/moduladvanced/{moduladvanced}', 'ModuladvancedsController@update');
+
 
 //route untuk raport
 Route::get('/raport/createraport', 'PagesController@createraport');

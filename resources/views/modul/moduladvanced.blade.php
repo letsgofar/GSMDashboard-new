@@ -40,7 +40,7 @@
                       </td>
                       <td>
                         <div class="text-center">
-                        <a type="button" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="/modul/moduladvanced/{{$advanced->id}}" type="button" class="btn btn-warning btn-sm">Edit</a>
                         <form class="d-inline" action="/modul/moduladvanced/{{$advanced->id}}" method="POST">
                           @method('delete')
                           @csrf

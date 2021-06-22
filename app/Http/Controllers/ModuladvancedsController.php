@@ -58,7 +58,7 @@ class ModuladvancedsController extends Controller
      */
     public function edit(Moduladvanced $moduladvanced)
     {
-        //
+        return view('modul/editmoduladvanced', ['moduladvanced'=>$moduladvanced]);
     }
 
     /**
@@ -70,7 +70,20 @@ class ModuladvancedsController extends Controller
      */
     public function update(Request $request, Moduladvanced $moduladvanced)
     {
-        //
+        Moduladvanced::where('id', $moduladvanced->id)
+        ->update([
+            'kategori'=> $request->kategori,
+            'level'=> $request->level,
+            'tingkat_sekolah'=> $request->tingkat_sekolah,
+            'judul_modul'=> $request->judul_modul,
+            'deskripsi_modul'=> $request->deskripsi_modul,
+            'tantangan'=> $request->tantangan,
+            'url_video'=> $request->url_video,
+            'url_dokumen'=> $request->url_dokumen,
+            'url_gambar'=> $request->url_gambar,
+        ]);
+
+        return redirect('/modul/moduladvanced');
     }
 
     /**
