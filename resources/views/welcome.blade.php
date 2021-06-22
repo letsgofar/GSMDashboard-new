@@ -8,7 +8,7 @@
       <div class="col-md-12 grid-margin">
         <div class="row">
           <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-            <h3 class="font-weight-bold">Selamat Datang !</h3>
+            <h3 class="font-weight-bold">Selamat Datang, {{ Auth::user()->name }} !</h3>
             <h6 class="font-weight-normal mb-0">Selamat Datang di Dashboard Admin E-Learning <a href="https://sekolahmenyenangkan.or.id/" target="_blank" class="text-primary">Gerakan Sekolah Menyenangkan</a></h6>
           </div>
         </div>
