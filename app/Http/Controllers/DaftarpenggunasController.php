@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Daftarpengguna;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class DaftarpenggunasController extends Controller
@@ -15,7 +16,8 @@ class DaftarpenggunasController extends Controller
     public function index()
     {
         $daftarpengguna = Daftarpengguna::all();
-        return view("listuser", ['pengguna'=>$daftarpengguna]);
+        $users = DB::table('users')->get();
+        return view("listuser", ['pengguna'=>$daftarpengguna], ['user'=>$users]);
     }
 
     /**
