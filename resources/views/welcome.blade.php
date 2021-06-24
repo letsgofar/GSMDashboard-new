@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 mb-4 grid-margin stretch-card">
+      <div class="col-md-6 mb-4 h-50 grid-margin stretch-card">
         <div class="card mb-4" style="background-color: #a7d1d0">
           <div class="card-people">
             <img src="{{asset('/assets/images/dashboard/people.png')}}" alt="people">

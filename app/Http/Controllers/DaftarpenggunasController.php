@@ -17,7 +17,9 @@ class DaftarpenggunasController extends Controller
     {
         $daftarpengguna = Daftarpengguna::all();
         $users = DB::table('users')->get();
-        return view("listuser", ['pengguna'=>$daftarpengguna], ['user'=>$users]);
+        $mentors = DB::table('mentors')->get();
+        return view('listuser', compact('daftarpengguna', 'users', 'mentors'));
+        // return view("listuser", ['pengguna'=>$daftarpengguna], ['user'=>$users], ['mentors'=>$mentors]);
     }
 
     /**
