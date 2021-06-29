@@ -17,7 +17,7 @@
               <p class="card-description">
                 Admin bisa membuat mengedit materi dengan mengisi atau mengubah form berikut
               </p>
-              <form class="forms-sample" method="POST" action="/modul/modulbasic/{{$moduladvanced->id}}">
+              <form class="forms-sample" method="POST" action="/modul/moduladvanced/{{$moduladvanced->id}}">
                 @method('put')
                 @csrf
                 <div class="form-group">

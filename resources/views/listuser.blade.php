@@ -73,14 +73,14 @@
                         {{$mentor->id}}
                       </td>
                       <td class="text-center">
-                        {{$mentor->nama}}
+                        {{$mentor->name}}
                       </td>
                       <td class="text-center">
                         {{$mentor->email}}
                       </td>
                       <td>
                         <div class="text-center">
-                        <a href="{{url("/listuser/$mentor->id")}}" class="btn btn-success btn-sm">Atur Sebagai Admin</a>
+                        <a href="edituser/{{$mentor->id}}" type="button" class="btn btn-success btn-sm">Atur Sebagai Admin</a>
                         </div>
                       </td>
                     </tr>

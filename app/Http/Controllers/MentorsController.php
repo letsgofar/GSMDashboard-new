@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Daftarpengguna;
-use Illuminate\Support\Facades\DB;
+use App\Mentor;
 use Illuminate\Http\Request;
 
-class DaftarpenggunasController extends Controller
+class MentorsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,19 +14,15 @@ class DaftarpenggunasController extends Controller
      */
     public function index()
     {
-        $daftarpengguna = Daftarpengguna::all();
-        $users = DB::table('users')->where('role', 'Admin')->get();
-        $mentors = DB::table('users')->where('role', 'Mentor')->get();
-        return view('listuser', compact('daftarpengguna', 'users', 'mentors'));
-        // return view("listuser", ['pengguna'=>$daftarpengguna], ['user'=>$users], ['mentors'=>$mentors]);
+        $mentors= Mentor::having('role', "Mentor")->get();
+        return view('listuser', ['mentors'=>$mentors]);
     }
 
-     /**
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-
     public function create()
     {
         //
@@ -47,44 +42,48 @@ class DaftarpenggunasController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Daftarpengguna  $daftarpengguna
+     * @param  \App\Mentor  $mentor
      * @return \Illuminate\Http\Response
      */
-    public function show(Daftarpengguna $daftarpengguna)
+    public function show(Mentor $mentor)
     {
-        return view('detailuser', ['user' => $daftarpengguna]); 
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Daftarpengguna  $daftarpengguna
+     * @param  \App\Mentor  $mentor
      * @return \Illuminate\Http\Response
      */
-    public function edit(Daftarpengguna $daftarpengguna)
+    public function edit(Mentor $mentor)
     {
-        
+        return view('edituser', ['mentor' => $mentor]);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Daftarpengguna  $daftarpengguna
+     * @param  \App\Mentor  $mentor
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Daftarpengguna $daftarpengguna)
+    public function update(Request $request, Mentor $mentor)
     {
-        
+        Mentor::where('id', $mentor->id)
+        ->update([
+            'role'=> $request->role,
+        ]);
+        return redirect('/listuser');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Daftarpengguna  $daftarpengguna
+     * @param  \App\Mentor  $mentor
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Daftarpengguna $daftarpengguna)
+    public function destroy(Mentor $mentor)
     {
         //
     }

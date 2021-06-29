@@ -21,6 +21,9 @@ Route::get('/', 'PagesController@home');
 Route::get('/listuser', 'DaftarpenggunasController@index'); 
 Route::get('/listuser/{daftarpengguna}', 'DaftarpenggunasController@show'); //{daftarpengguna} diambil dari model
 
+Route::get('/edituser/{mentor}', 'MentorsController@edit');
+Route::put('/listuser/{mentor}', 'MentorsController@update');
+
 //route untuk sekolah
 Route::get('/sekolah/sekolahmodel', 'SekolahmodelController@index');
 Route::get('/sekolah/sekolahmodel/{sekolahmodel}', 'SekolahmodelController@show');
